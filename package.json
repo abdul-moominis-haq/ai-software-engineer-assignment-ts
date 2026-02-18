@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/abdul-moominis-haq/ai-software-engineer-assignment-ts#readme",
   "devDependencies": {
-    "@types/node": "^25.2.3",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "@types/node": "25.2.3",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
   },
   "dependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "3.1.11"
   }
 }

@@ -30,4 +30,14 @@ describe("HttpClient OAuth2 behavior", () => {
 
     expect(resp.headers.Authorization).toBe("Bearer fresh-token");
   });
+
+  test("api=true refreshes when OAuth2Token is expired", () => {
+    const c = new HttpClient();
+    // Create an expired token (expires in the past)
+    c.oauth2Token = new OAuth2Token("expired", Math.floor(Date.now() / 1000) - 3600);
+
+    const resp = c.request("GET", "/me", { api: true });
+
+    expect(resp.headers.Authorization).toBe("Bearer fresh-token");
+  });
 });
