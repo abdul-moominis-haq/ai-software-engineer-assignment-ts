@@ -1,0 +1,31 @@
+{
+  "name": "ai-software-engineer-assignment-ts",
+  "version": "1.0.0",
+  "description": "This assignment evaluates your ability to:",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx vitest run",
+    "start": "nodemon src/httpClient.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdul-moominis-haq/ai-software-engineer-assignment-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdul-moominis-haq/ai-software-engineer-assignment-ts/issues"
+  },
+  "homepage": "https://github.com/abdul-moominis-haq/ai-software-engineer-assignment-ts#readme",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
